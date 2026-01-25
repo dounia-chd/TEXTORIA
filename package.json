@@ -1,0 +1,28 @@
+{
+  "name": "textoria",
+  "version": "1.0.0",
+  "description": "AI Content Generation Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "preinstall": "node preinstall.js"
+  },
+  "keywords": [
+    "ai",
+    "content-generation",
+    "gpt",
+    "dall-e",
+    "nextjs",
+    "express"
+  ],
+  "author": "TEXTORIA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
